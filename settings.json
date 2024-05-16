@@ -531,4 +531,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "zenMode.showTabs": "single",
   "workbench.editor.empty.hint": "hidden",
+  "arduino.commandPath": "arduino-cli",
+  "arduino.path": "/opt/homebrew/bin"
 }
