@@ -342,7 +342,7 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   ///////////////////////////////////
   // Look and feel
   ///////////////////////////////////
@@ -357,10 +357,9 @@
   "window.newWindowDimensions": "maximized",
   "window.menuBarVisibility": "toggle",
   "files.simpleDialog.enable": true,
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorTheme": "Simple Dark",
+  "workbench.colorTheme": "Material Theme Palenight",
   // icons
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "eq-material-theme-icons-ocean",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -397,7 +396,6 @@
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": true,
   "zenMode.hideActivityBar": false,
   ///////////////////////////////////
   // SCM settings
@@ -531,4 +529,6 @@
   ],
   "githubPullRequests.pushBranch": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "zenMode.showTabs": "single",
+  "workbench.editor.empty.hint": "hidden",
 }
