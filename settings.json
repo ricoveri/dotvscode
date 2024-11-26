@@ -346,9 +346,8 @@
   ///////////////////////////////////
   // Look and feel
   ///////////////////////////////////
-  "editor.fontFamily": "Source Code Pro, monospace",
-  // "editor.fontFamily": "Input Mono, monospace",
-  // "editor.fontSize": 15,
+  // see: https://pcaro.es/hermit/
+  "editor.fontFamily": "Hermit, Source Code Pro, monospace",
   "editor.fontSize": 16,
   "editor.fontWeight": "400",
   "editor.letterSpacing": -0.22,
