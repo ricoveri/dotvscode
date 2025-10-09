@@ -1,20 +1,5 @@
 {
   /////////////////////////////
-  // Macros
-  /////////////////////////////
-  "macros": {
-    "quickFixmeComment": [
-      "extension.vim_insert",
-      {
-        "command": "type",
-        "args": {
-          "text": "FIXME: "
-        }
-      },
-      "editor.action.commentLine"
-    ]
-  },
-  /////////////////////////////
   // vim (the most basic thing)
   /////////////////////////////
   "vim.useSystemClipboard": true,
