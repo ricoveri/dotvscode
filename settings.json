@@ -40,6 +40,15 @@
     {
       "before": [
         "<leader>",
+        "<leader>",
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
         "w",
         "h"
       ],
