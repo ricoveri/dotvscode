@@ -581,9 +581,6 @@
   // C/C++
   // ------------------------------------------------
   "C_Cpp.intelliSenseEngine": "Disabled",
-  "clangd.checkUpdates": true,
-  ///////////////////////////////////
-  // !!! Anything below this line should be added automatically by VSCode or extensions !!!
-  // !!! Consider moving them above this line and/or adding to .vscode/extensions.json !!!
+  "clangd.checkUpdates": true
   ///////////////////////////////////
 }
