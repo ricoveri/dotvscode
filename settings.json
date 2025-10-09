@@ -1,27 +1,12 @@
 {
   /////////////////////////////
-  // Macros
-  /////////////////////////////
-  "macros": {
-    "quickFixmeComment": [
-      "extension.vim_insert",
-      {
-        "command": "type",
-        "args": {
-          "text": "FIXME: "
-        }
-      },
-      "editor.action.commentLine"
-    ]
-  },
-  /////////////////////////////
   // vim (the most basic thing)
   /////////////////////////////
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
-  "vim.easymotion": true,
+  "vim.easymotion": false,
   "vim.statusBarColorControl": false,
   "vim.handleKeys": {
     "<C-b>": false,
@@ -37,6 +22,15 @@
     /////////////////////////////////
     // Editor navigation
     /////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "<leader>",
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
     {
       "before": [
         "<leader>",
@@ -212,6 +206,49 @@
         "workbench.action.files.save"
       ]
     },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "o"
+      ],
+      "commands": [
+        "workbench.action.files.openFile"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    ///////////////////////////////////
+    // Project management (requires project-manager extension)
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "p"
+      ],
+      "commands": [
+        "projectManager.listProjectsNewWindow"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "s"
+      ],
+      "commands": [
+        "projectManager.saveProject"
+      ]
+    },
     ///////////////////////////////////
     // Debugger
     ///////////////////////////////////
@@ -305,7 +342,7 @@
       "commands": [
         "pr:github.focus"
       ]
-    },
+    }
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -342,25 +379,23 @@
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   ///////////////////////////////////
   // Look and feel
   ///////////////////////////////////
-  "editor.fontFamily": "Source Code Pro, monospace",
-  // "editor.fontFamily": "Input Mono, monospace",
-  // "editor.fontSize": 15,
-  "editor.fontSize": 16,
-  "editor.fontWeight": "400",
+  // see: https://pcaro.es/hermit/
+  // "editor.fontFamily": "Hermit, Source Code Pro, monospace",
+  // "editor.fontFamily": "Input Mono Thin, Source Code Pro, monospace",
+  "editor.fontFamily": "Input Mono, Source Code Pro, monospace",
+  "editor.fontSize": 14,
   "editor.letterSpacing": -0.22,
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "window.newWindowDimensions": "maximized",
   "window.menuBarVisibility": "toggle",
   "files.simpleDialog.enable": true,
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorTheme": "Simple Dark",
   // icons
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -397,7 +432,6 @@
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.hideTabs": true,
   "zenMode.hideActivityBar": false,
   ///////////////////////////////////
   // SCM settings
@@ -419,9 +453,6 @@
   // Plugins section
   ///////////////////////////////////
   // Terraform
-  // "terraform-ls.experimentalFeatures": {
-  //   "validateOnSave": true
-  // },
   "terraform.languageServer": {
     "external": true,
     "pathToBinary": "",
@@ -517,7 +548,7 @@
   },
   "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.checkUpdates": true,
-  "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd",
+  "clangd.path": "c:\\Users\\anton\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\18.1.3\\clangd_18.1.3\\bin\\clangd.exe",
   "debug.onTaskErrors": "showErrors",
   "json.schemas": [],
   "editor.suggest.showMethods": true,
@@ -531,4 +562,51 @@
   ],
   "githubPullRequests.pushBranch": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "zenMode.showTabs": "single",
+  "workbench.editor.empty.hint": "hidden",
+  "arduino.commandPath": "arduino-cli",
+  "arduino.path": "/opt/homebrew/bin",
+  "redhat.telemetry.enabled": false,
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "bluebrown.yamlfmt"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.colorTheme": "Monokai",
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path-mac": "/Users/alri/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.helm-path-mac": "/Users/alri/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.minikube-path-mac": "/Users/alri/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  },
+  "git.replaceTagsWhenPull": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "git.blame.statusBarItem.enabled": false,
+  "git.blame.editorDecoration.enabled": true,
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.startupEditor": "none"
 }
