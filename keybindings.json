@@ -23,12 +23,23 @@
         "command": "workbench.view.scm"
     },
     ///////////////////////////////////
+    // Project manager
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; p",
+        "command": "projectManager.listProjects"
+    },
+    ///////////////////////////////////
     // Open files and folders
     ///////////////////////////////////
     {
         "key": "ctrl+o",
         "command": "workbench.action.files.openFileFolder",
         "when": "isMac"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
     },
     ///////////////////////////////////
     // Panel
