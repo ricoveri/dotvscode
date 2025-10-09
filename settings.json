@@ -583,6 +583,10 @@
   "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.checkUpdates": true,
   ///////////////////////////////////
+  // Settings to be ignore by Settings Sync
+  ///////////////////////////////////
+  "settingsSync.ignoredSettings": []
+  ///////////////////////////////////
   // !!! Anything below this line should be added automatically by VSCode or extensions !!!
   // !!! Consider moving them above this line and/or adding to .vscode/extensions.json !!!
   ///////////////////////////////////
