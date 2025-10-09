@@ -384,18 +384,18 @@
   // Look and feel
   ///////////////////////////////////
   // see: https://pcaro.es/hermit/
-  "editor.fontFamily": "Hermit, Source Code Pro, monospace",
-  "editor.fontSize": 16,
-  "editor.fontWeight": "400",
+  // "editor.fontFamily": "Hermit, Source Code Pro, monospace",
+  // "editor.fontFamily": "Input Mono Thin, Source Code Pro, monospace",
+  "editor.fontFamily": "Input Mono, Source Code Pro, monospace",
+  "editor.fontSize": 14,
   "editor.letterSpacing": -0.22,
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "window.newWindowDimensions": "maximized",
   "window.menuBarVisibility": "toggle",
   "files.simpleDialog.enable": true,
-  "workbench.colorTheme": "Material Theme Palenight",
   // icons
-  "workbench.iconTheme": "eq-material-theme-icons-ocean",
+  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -453,9 +453,6 @@
   // Plugins section
   ///////////////////////////////////
   // Terraform
-  // "terraform-ls.experimentalFeatures": {
-  //   "validateOnSave": true
-  // },
   "terraform.languageServer": {
     "external": true,
     "pathToBinary": "",
