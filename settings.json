@@ -25,15 +25,6 @@
     {
       "before": [
         "<leader>",
-        "<leader>",
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
         "w",
         "h"
       ],
@@ -206,39 +197,9 @@
         "workbench.action.files.save"
       ]
     },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.files.openFile"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
     ///////////////////////////////////
     // Project management (requires project-manager extension)
     ///////////////////////////////////
-    {
-      "before": [
-        "<leader>",
-        "p",
-        "p"
-      ],
-      "commands": [
-        "projectManager.listProjectsNewWindow"
-      ]
-    },
     {
       "before": [
         "<leader>",
@@ -376,7 +337,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "i3 - Tokyo Night - Custom",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
