@@ -376,25 +376,35 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
+  "workbench.colorTheme": "Monokai",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
   "workbench.editor.showTabs": "multiple",
+  "workbench.editor.empty.hint": "hidden",
   ///////////////////////////////////
   // Look and feel
   ///////////////////////////////////
-  // see: https://pcaro.es/hermit/
-  // "editor.fontFamily": "Hermit, Source Code Pro, monospace",
-  // "editor.fontFamily": "Input Mono Thin, Source Code Pro, monospace",
   "editor.fontFamily": "Input Mono, Source Code Pro, monospace",
   "editor.fontSize": 14,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
   "editor.letterSpacing": -0.22,
+  "editor.accessibilitySupport": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "window.newWindowDimensions": "maximized",
   "window.menuBarVisibility": "toggle",
   "files.simpleDialog.enable": true,
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.inlayHints.enabled": "on",
   // icons
+  // ------------------------------------------------
+  "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
@@ -426,56 +436,89 @@
     ]
   },
   ///////////////////////////////////
+  // Debugger
+  ///////////////////////////////////
+  "debug.onTaskErrors": "showErrors",
+  ///////////////////////////////////
+  // Security-related settings
+  ///////////////////////////////////
+  "security.workspace.trust.untrustedFiles": "open",
+  ///////////////////////////////////
   // Zen mode
   ///////////////////////////////////
+  "zenMode.showTabs": "single",
   "zenMode.fullScreen": true,
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.hideActivityBar": false,
   ///////////////////////////////////
-  // SCM settings
+  // Git settings
   ///////////////////////////////////
+  "git.confirmSync": false,
   "git.autofetch": true,
   "git.showProgress": true,
   "git.suggestSmartCommit": false,
+  "git.blame.statusBarItem.enabled": false,
+  "git.blame.editorDecoration.enabled": true,
+  "git.replaceTagsWhenPull": true,
   "diffEditor.renderSideBySide": false,
   "diffEditor.ignoreTrimWhitespace": false,
   ///////////////////////////////////
   // Integrated terminal
   ///////////////////////////////////
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
   "terminal.integrated.fontSize": 13,
   "terminal.external.osxExec": "iTerm2.app",
   "terminal.integrated.commandsToSkipShell": [
     "-workbench.action.quickOpen"
   ],
   ///////////////////////////////////
-  // Plugins section
+  // Github
   ///////////////////////////////////
-  // Terraform
-  "terraform.languageServer": {
-    "external": true,
-    "pathToBinary": "",
-    "args": [
-      "serve"
-    ],
-    "maxNumberOfProblems": 100,
-    "trace.server": "off"
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
-  // Python
-  "python.pythonPath": "/usr/bin/python3",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "githubPullRequests.pushBranch": "always",
+  //////////////////////////////////
+  // Language/tech-specific settings
+  ///////////////////////////////////
+  // JSON with comments
+  // ------------------------------------------------
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
-  // golang
-  "go.toolsManagement.autoUpdate": true,
-  "go.useLanguageServer": true,
-  "go.lintOnSave": "workspace",
-  "go.lintTool": "golangci-lint",
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
+  // docker
+  // ------------------------------------------------
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "docker.extension.enableComposeLanguageServer": false,
   },
-  // yaml
+  // vim files
+  // ------------------------------------------------
+  "files.associations": {
+    "*.vim": "vimrc"
+  },
+  // YAML files
+  // ------------------------------------------------
+  "[yaml]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
   "yaml.customTags": [
     "!Ref",
     "!GetAtt",
@@ -508,105 +551,39 @@
     "!Select sequence",
     "!Split sequence"
   ],
-  "git.confirmSync": false,
-  "editor.lineNumbers": "on",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-  "editor.wordWrap": "off",
-  "files.associations": {
-    "*.vim": "vimrc"
-  },
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "[yaml]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
-  "yaml.schemas": {
-    "file:/Users/alri/Library/Application Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json": [
-      "cloudformation/logging-lambdaforwarder.yaml",
-      "cloudformation/sre-whoisoncall.yaml"
+  // docker
+  // ------------------------------------------------
+  // Terraform
+  "terraform.languageServer": {
+    "external": true,
+    "pathToBinary": "",
+    "args": [
+      "serve"
     ],
-    "file:///Users/alri/Library/Application%20Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json": [
-      "cloudformation/sre-whoisoncall.yaml",
-      "pkg/cfn/test-fixtures/tpcfn-lambdaschedule.yaml",
-      "pkg/cfn/test-fixtures/tpcfn-lambda.yaml",
-      "pkg/cfn/test-fixtures/tpcfn-lambdasqs.yaml",
-      "cloudformation/devops-cloudtrailpreprocessor.yaml",
-      "cloudformation/logging-ecsfargateforwarder.yaml",
-      "cloudformation/devops-octopusdeploymentsnotifier.yaml",
-      "cloudformation/aws-cloudwatchalertscollector.yaml",
-      "cloudformation/infrastructure-alertsenricher.yaml",
-      "cloudformation/infrastructure-alertspublisher.yaml",
-      "cloudformation/slackalerts-notifier.yaml"
-    ],
-    "file:///Users/alri/Library/Application%20Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/sam.schema.json": [
-      "cloudformation/cloudformation-vpcmacro.yaml",
-      "cloudformation/cloudformation-conformitymacro.yaml"
-    ]
+    "maxNumberOfProblems": 100,
+    "trace.server": "off"
   },
+  // Python
+  // ------------------------------------------------
+  "python.pythonPath": "/usr/bin/python3",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  // golang
+  // ------------------------------------------------
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "go.lintOnSave": "workspace",
+  "go.lintTool": "golangci-lint",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  // C/C++
+  // ------------------------------------------------
   "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.checkUpdates": true,
-  "clangd.path": "c:\\Users\\anton\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\18.1.3\\clangd_18.1.3\\bin\\clangd.exe",
-  "debug.onTaskErrors": "showErrors",
-  "json.schemas": [],
-  "editor.suggest.showMethods": true,
-  "editor.suggest.preview": true,
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.snippetSuggestions": "top",
-  "editor.inlayHints.enabled": "on",
-  "snyk.advanced.cliPath": "/usr/local/bin/snyk",
-  "snyk.trustedFolders": [
-    "/Users/alri/Projects/corp/trustpilot/sre/mongo-instancemanager"
-  ],
-  "githubPullRequests.pushBranch": "always",
-  "security.workspace.trust.untrustedFiles": "open",
-  "zenMode.showTabs": "single",
-  "workbench.editor.empty.hint": "hidden",
-  "arduino.commandPath": "arduino-cli",
-  "arduino.path": "/opt/homebrew/bin",
-  "redhat.telemetry.enabled": false,
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "bluebrown.yamlfmt"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "workbench.colorTheme": "Monokai",
-  "vs-kubernetes": {
-    "vscode-kubernetes.kubectl-path-mac": "/Users/alri/.vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.helm-path-mac": "/Users/alri/.vs-kubernetes/tools/helm/darwin-arm64/helm",
-    "vscode-kubernetes.minikube-path-mac": "/Users/alri/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
-  },
-  "git.replaceTagsWhenPull": true,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "docker.extension.enableComposeLanguageServer": false,
-  "git.blame.statusBarItem.enabled": false,
-  "git.blame.editorDecoration.enabled": true,
-  "terminal.integrated.env.osx": {
-    "Q_NEW_SESSION": "1"
-  },
-  "editor.accessibilitySupport": "off",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "workbench.startupEditor": "none"
+  ///////////////////////////////////
+  // !!! Anything below this line should be added automatically by VSCode or extensions !!!
+  // !!! Consider moving them above this line and/or adding to .vscode/extensions.json !!!
+  ///////////////////////////////////
 }
