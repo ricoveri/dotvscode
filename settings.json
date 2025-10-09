@@ -376,7 +376,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Material Dark Soda",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -582,10 +582,6 @@
   // ------------------------------------------------
   "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.checkUpdates": true,
-  ///////////////////////////////////
-  // Settings to be ignore by Settings Sync
-  ///////////////////////////////////
-  "settingsSync.ignoredSettings": []
   ///////////////////////////////////
   // !!! Anything below this line should be added automatically by VSCode or extensions !!!
   // !!! Consider moving them above this line and/or adding to .vscode/extensions.json !!!
