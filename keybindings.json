@@ -7,13 +7,6 @@
         "command": "workbench.action.gotoSymbol"
     },
     {
-        "key": "ctrl+p",
-        "command": "workbench.action.quickOpen"
-    },
-    //////////////////////////////////
-    // Switch windows
-    ///////////////////////////////////
-    {
         "key": "ctrl+; w",
         "command": "workbench.action.quickSwitchWindow"
     },
@@ -182,10 +175,6 @@
         "command": "workbench.view.search"
     },
     // Project Manager
-    {
-        "key": "ctrl+; p",
-        "command": "projectManager.listProjectsNewWindow"
-    },
     {
         "key": "ctrl+; x",
         "command": "workbench.view.extensions",
