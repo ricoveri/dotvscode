@@ -376,7 +376,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Material Dark Soda",
+  "workbench.colorTheme": "i3 - Tokyo Night - Custom",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
