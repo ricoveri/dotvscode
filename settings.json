@@ -21,7 +21,7 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
-  "vim.easymotion": true,
+  "vim.easymotion": false,
   "vim.statusBarColorControl": false,
   "vim.handleKeys": {
     "<C-b>": false,
