@@ -16,7 +16,7 @@
     "<C-k>": false,
     "<C-j>": false,
     "<C-w>": false,
-    "<C-o>": false
+    "<C-o>": false,
   },
   /////////////////////////////////
   // Key bindings for vim emulation
