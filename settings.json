@@ -2,6 +2,9 @@
   /////////////////////////////
   // vim (the most basic thing)
   /////////////////////////////
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1 // this supposedly makes the vim extension faster
+  },
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
