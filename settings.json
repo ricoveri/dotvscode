@@ -87,6 +87,19 @@
       ]
     },
     ///////////////////////////////////
+    // Editor text management
+    ///////////////////////////////////
+    // editor.action.changeAll
+    {
+      "before": [
+        "g",
+        "s"
+      ],
+      "commands": [
+        "editor.action.changeAll"
+      ]
+    },
+    ///////////////////////////////////
     // Editor management
     ///////////////////////////////////
     {
