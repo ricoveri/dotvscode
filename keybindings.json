@@ -64,7 +64,8 @@
     ///////////////////////////////////
     {
         "key": "ctrl+[",
-        "command": "workbench.action.blur"
+        "command": "workbench.action.blur",
+        "when": "!editorFocus"
     },
     ///////////////////////////////////
     // Toggle zen mode
