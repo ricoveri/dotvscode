@@ -213,26 +213,6 @@
         "workbench.action.files.save"
       ]
     },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.files.openFile"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "f",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
-    },
     ///////////////////////////////////
     // Project management (requires project-manager extension)
     ///////////////////////////////////
