@@ -240,16 +240,6 @@
       "before": [
         "<leader>",
         "p",
-        "p"
-      ],
-      "commands": [
-        "projectManager.listProjectsNewWindow"
-      ]
-    },
-    {
-      "before": [
-        "<leader>",
-        "p",
         "s"
       ],
       "commands": [
