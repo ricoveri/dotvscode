@@ -29,6 +29,10 @@
         "key": "ctrl+; p",
         "command": "projectManager.listProjects"
     },
+    {
+        "key": "alt+cmd+p",
+        "command": "-projectManager.listProjects"
+    },
     ///////////////////////////////////
     // Open files and folders
     ///////////////////////////////////
@@ -134,6 +138,8 @@
         "command": "workbench.action.closeActiveEditor"
     },
     // resizing
+    // fixme; karabiner-elements complex modifications
+    // to make shift+ctrl+h/j/k/l send shift+cmd+/j/k/l instead
     {
         "key": "shift+cmd+h",
         "command": "workbench.action.decreaseViewWidth",
@@ -155,11 +161,37 @@
         "when": "editorFocus"
     },
     ///////////////////////////////////
+    // Editor actions
+    ///////////////////////////////////
+    {
+        "key": "ctrl+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    ///////////////////////////////////
     // Terminal
     ///////////////////////////////////
     {
         "key": "ctrl+; t",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    ///////////////////////////////////
+    // Copilot
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; c",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
     },
     ///////////////////////////////////
     // Side panels
@@ -177,26 +209,13 @@
         "command": "-workbench.action.showCommands"
     },
     {
+        "key": "shift+cmd+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
         "key": "ctrl+; e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
-    },
-    {
-        "key": "ctrl+; f",
-        "command": "workbench.view.search"
-    },
-    // Project Manager
-    {
-        "key": "ctrl+; x",
-        "command": "workbench.view.extensions",
-        "when": "viewContainer.workbench.view.extensions.enabled"
-    },
-    ///////////////////////////////////////////////
-    // These will force me to use my key bindings
-    ///////////////////////////////////////////////
-    {
-        "key": "shift+cmd+p",
-        "command": "-workbench.action.showCommands"
     },
     {
         "key": "shift+cmd+e",
@@ -204,9 +223,8 @@
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
-        "key": "shift+cmd+x",
-        "command": "-workbench.view.extensions",
-        "when": "viewContainer.workbench.view.extensions.enabled"
+        "key": "ctrl+; f",
+        "command": "workbench.view.search"
     },
     {
         "key": "shift+cmd+f",
@@ -214,21 +232,20 @@
         "when": "workbench.view.search.active"
     },
     {
+        "key": "ctrl+; x",
+        "command": "workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    ///////////////////////////////////////////////
+    // These will force me to use my key bindings
+    ///////////////////////////////////////////////
+    {
         "key": "shift+cmd+f",
         "command": "-workbench.action.findInFiles"
-    },
-    {
-        "key": "alt+cmd+p",
-        "command": "-projectManager.listProjects"
-    },
-    {
-        "key": "ctrl+.",
-        "command": "editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
-    },
-    {
-        "key": "cmd+.",
-        "command": "-editor.action.quickFix",
-        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
     },
 ]
