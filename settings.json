@@ -2,6 +2,9 @@
   /////////////////////////////
   // vim (the most basic thing)
   /////////////////////////////
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1 // this supposedly makes the vim extension faster
+  },
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
@@ -13,7 +16,7 @@
     "<C-k>": false,
     "<C-j>": false,
     "<C-w>": false,
-    "<C-o>": false
+    "<C-o>": false,
   },
   /////////////////////////////////
   // Key bindings for vim emulation
@@ -81,6 +84,19 @@
       ],
       "commands": [
         "workbench.action.splitEditorDown"
+      ]
+    },
+    ///////////////////////////////////
+    // Editor text management
+    ///////////////////////////////////
+    // editor.action.changeAll
+    {
+      "before": [
+        "g",
+        "s"
+      ],
+      "commands": [
+        "editor.action.changeAll"
       ]
     },
     ///////////////////////////////////
@@ -303,7 +319,7 @@
       "commands": [
         "pr:github.focus"
       ]
-    }
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -337,7 +353,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "i3 - Tokyo Night - Custom",
+  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -366,7 +382,7 @@
   // icons
   // ------------------------------------------------
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "Monokai Pro (Filter Ristretto) Icons",
+  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -442,7 +458,7 @@
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": false,
+    "markdown": true,
     "scminput": false
   },
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -541,11 +557,17 @@
   },
   // C/C++
   // ------------------------------------------------
-  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
   "clangd.checkUpdates": true,
-  ///////////////////////////////////
-  // !!! Anything below this line should be added automatically by VSCode or extensions !!!
-  // !!! Consider moving them above this line and/or adding to .vscode/extensions.json !!!
-  "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd"
+  "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 4,
+  },
+  "debug.allowBreakpointsEverywhere": true,
+  "docker.extension.enableComposeLanguageServer": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
   ///////////////////////////////////
 }
