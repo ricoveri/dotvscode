@@ -423,7 +423,7 @@
   ///////////////////////////////////
   // Zen mode
   ///////////////////////////////////
-  "zenMode.showTabs": "single",
+  "zenMode.showTabs": "multiple",
   "zenMode.fullScreen": true,
   "zenMode.hideStatusBar": false,
   "zenMode.centerLayout": false,
