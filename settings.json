@@ -353,7 +353,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+  "workbench.colorTheme": "Monokai Classic",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -382,7 +382,7 @@
   // icons
   // ------------------------------------------------
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
