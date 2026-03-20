@@ -7,39 +7,20 @@
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    // Snippets
-    "geddski.macros",
     // FIXMEs and TODOs
     "gruntfuggly.todo-tree",
     ///////////////////////////////////
     // Git
     ///////////////////////
-    "eamodio.gitlens",
     "github.vscode-pull-request-github", // GitHub pull requests and issues management
-    ///////////////////////////////////
-    // Look and feel
-    ///////////////////////////////////
-    "arcticicestudio.nord-visual-studio-code",
-    "pkief.material-icon-theme",
     ///////////////////////////////////
     // Language/tools support
     ///////////////////////////////////
-    // HTTP
-    "humao.rest-client",
-    // YAML
-    "redhat.vscode-yaml",
-    // AWS
-    "aws-scripting-guy.cform",
     // Python
     "ms-python.python",
-    "wholroyd.jinja",
-    // Terraform
-    "hashicorp.terraform",
-    "run-at-scale.terraform-doc-snippets",
     // Docker
     "ms-azuretools.vscode-docker",
+    // Golang
     "golang.go",
-    // Kubernetes
-    "ms-kubernetes-tools.vscode-kubernetes-tools"
   ]
 }
