@@ -181,17 +181,11 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     ///////////////////////////////////
-    // Copilot
+    // Cursor Chat
     ///////////////////////////////////
     {
         "key": "ctrl+; c",
-        "command": "workbench.panel.chat",
-        "when": "workbench.panel.chat.view.copilot.active"
-    },
-    {
-        "key": "ctrl+cmd+i",
-        "command": "-workbench.panel.chat",
-        "when": "workbench.panel.chat.view.copilot.active"
+        "command": "workbench.action.toggleAuxiliaryBar"
     },
     ///////////////////////////////////
     // Side panels
