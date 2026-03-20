@@ -350,10 +350,6 @@
   "explorer.confirmDragAndDrop": false,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  ///////////////////////////////////
-  // Editor group settings
-  ///////////////////////////////////
-  "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -382,7 +378,7 @@
   // icons
   // ------------------------------------------------
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+  "workbench.iconTheme": "Monokai Pro Light Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -463,6 +459,16 @@
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "githubPullRequests.pushBranch": "always",
+  ///////////////////////////////////
+  // Cursor
+  ///////////////////////////////////
+  "window.commandCenter": true,
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "scminput"
+  ],
+  "workbench.colorTheme": "Monokai Pro Light",
+  "cursor.composer.shouldChimeAfterChatFinishes": true
   //////////////////////////////////
   // Language/tech-specific settings
   ///////////////////////////////////
@@ -568,6 +574,5 @@
   "docker.extension.enableComposeLanguageServer": false,
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
-  ///////////////////////////////////
+  },
 }
