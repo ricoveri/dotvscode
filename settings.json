@@ -435,10 +435,13 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.showProgress": true,
+  "git.enableCommitSigning": true,
   "git.suggestSmartCommit": false,
   "git.blame.statusBarItem.enabled": false,
   "git.blame.editorDecoration.enabled": true,
   "git.replaceTagsWhenPull": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "diffEditor.renderSideBySide": false,
   "diffEditor.ignoreTrimWhitespace": false,
   ///////////////////////////////////
