@@ -573,8 +573,14 @@
   },
   "debug.allowBreakpointsEverywhere": true,
   "docker.extension.enableComposeLanguageServer": false,
+  // Typescript
+  // ------------------------------------------------
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
   ///////////////////////////////////
 }
