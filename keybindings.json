@@ -188,6 +188,13 @@
         "command": "workbench.action.toggleAuxiliaryBar"
     },
     ///////////////////////////////////
+    // Simple Browser
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; b",
+        "command": "simpleBrowser.show"
+    },
+    ///////////////////////////////////
     // Side panels
     ///////////////////////////////////
     {
