@@ -1,5 +1,15 @@
-globalStorage
-snippets
-workspaceStorage
-History
-sync
+# Cursor / VS Code User profile — ignore volatile local state only (repo root).
+
+/globalStorage/
+/workspaceStorage/
+/History/
+/snippets/
+
+# Settings Sync / legacy sync payload if present.
+/sync/
+
+# Machine-scoped settings (VS Code) if enabled.
+/Machine/
+
+# macOS folder metadata at repo root.
+/.DS_Store

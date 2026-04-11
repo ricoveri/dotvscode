@@ -296,16 +296,6 @@
         "git.checkout"
       ]
     },
-    {
-      "before": [
-        "<leader>",
-        ";",
-        "f"
-      ],
-      "commands": [
-        "macros.quickFixmeComment"
-      ]
-    },
     ///////////////////////////////////
     // GitHub
     ///////////////////////////////////
@@ -378,11 +368,7 @@
   // icons
   // ------------------------------------------------
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "Monokai Pro Light Icons",
-  "material-icon-theme.saturation": 0.7,
-  "material-icon-theme.folders.color": "#26a69a",
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.activeIconPack": "angular",
+  "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
   ///////////////////////////////////
   // Syntax highlighting customizations
   ///////////////////////////////////
@@ -459,16 +445,6 @@
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   "githubPullRequests.pushBranch": "always",
-  ///////////////////////////////////
-  // Cursor
-  ///////////////////////////////////
-  "window.commandCenter": true,
-  "cursor.cpp.disabledLanguages": [
-    "plaintext",
-    "scminput"
-  ],
-  "workbench.colorTheme": "Monokai Pro Light",
-  "cursor.composer.shouldChimeAfterChatFinishes": true
   //////////////////////////////////
   // Language/tech-specific settings
   ///////////////////////////////////
@@ -477,102 +453,24 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  // docker
-  // ------------------------------------------------
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "docker.extension.enableComposeLanguageServer": false,
-  },
   // vim files
   // ------------------------------------------------
   "files.associations": {
     "*.vim": "vimrc"
   },
-  // YAML files
-  // ------------------------------------------------
-  "[yaml]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
-  "yaml.customTags": [
-    "!Ref",
-    "!GetAtt",
-    "!FindInMap sequence",
-    "!FindInMap scalar",
-    "!GetAtt",
-    "!GetAZs",
-    "!Cidr",
-    "!ImportValue",
-    "!Join sequence",
-    "!Select",
-    "!Split",
-    "!Sub sequence",
-    "!Sub scalar",
-    "!And",
-    "!Equals",
-    "!If",
-    "!Not",
-    "!Or",
-    "!And sequence",
-    "!If sequence",
-    "!Not sequence",
-    "!Equals sequence",
-    "!Or sequence",
-    "!FindInMap",
-    "!Base64",
-    "!Join",
-    "!Sub",
-    "!ImportValue sequence",
-    "!Select sequence",
-    "!Split sequence"
-  ],
-  // docker
-  // ------------------------------------------------
-  // Terraform
-  "terraform.languageServer": {
-    "external": true,
-    "pathToBinary": "",
-    "args": [
-      "serve"
-    ],
-    "maxNumberOfProblems": 100,
-    "trace.server": "off"
-  },
-  // Python
-  // ------------------------------------------------
-  "python.pythonPath": "/usr/bin/python3",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  // golang
-  // ------------------------------------------------
-  "go.toolsManagement.autoUpdate": true,
-  "go.useLanguageServer": true,
-  "go.lintOnSave": "workspace",
-  "go.lintTool": "golangci-lint",
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  },
-  // C/C++
-  // ------------------------------------------------
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "clangd.checkUpdates": true,
-  "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 4,
   },
   "debug.allowBreakpointsEverywhere": true,
-  "docker.extension.enableComposeLanguageServer": false,
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "window.commandCenter": true,
+  "cursor.cpp.disabledLanguages": [
+    "plaintext",
+    "scminput"
+  ],
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)"
+  ///////////////////////////////////
 }

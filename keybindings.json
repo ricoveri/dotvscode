@@ -242,4 +242,12 @@
         "key": "shift+cmd+f",
         "command": "-workbench.action.findInFiles"
     },
+    {
+        "key": "ctrl+,",
+        "command": "aichat.newchataction"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-aichat.newchataction"
+    },
 ]
