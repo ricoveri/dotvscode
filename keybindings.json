@@ -22,6 +22,10 @@
         "key": "ctrl+; g",
         "command": "workbench.view.scm"
     },
+    // {
+    //     "key": "ctrl+; r",
+    //     "command": "workbench.scm.action.graph.pickRepository"
+    // },
     ///////////////////////////////////
     // Project manager
     ///////////////////////////////////

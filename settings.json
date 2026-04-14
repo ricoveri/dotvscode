@@ -353,7 +353,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Monokai Classic",
+  "workbench.colorTheme": "Monokai Pro Light",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -582,5 +582,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "claudeCode.preferredLocation": "sidebar"
   ///////////////////////////////////
 }
