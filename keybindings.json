@@ -185,8 +185,7 @@
     ///////////////////////////////////
     {
         "key": "ctrl+; c",
-        "command": "workbench.panel.chat",
-        "when": "workbench.panel.chat.view.copilot.active"
+        "command": "claude-vscode.editor.openLast",
     },
     {
         "key": "ctrl+cmd+i",
