@@ -188,10 +188,6 @@
     // Copilot
     ///////////////////////////////////
     {
-        "key": "ctrl+; c",
-        "command": "claude-vscode.editor.openLast",
-    },
-    {
         "key": "ctrl+cmd+i",
         "command": "-workbench.panel.chat",
         "when": "workbench.panel.chat.view.copilot.active"
@@ -199,6 +195,10 @@
     ///////////////////////////////////
     // Claude
     ///////////////////////////////////
+    {
+        "key": "ctrl+; c",
+        "command": "claude-vscode.editor.openLast",
+    },
     {
         "key": "ctrl+,",
         "command": "claude-vscode.insertAtMention",
