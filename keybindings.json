@@ -197,6 +197,14 @@
         "when": "workbench.panel.chat.view.copilot.active"
     },
     ///////////////////////////////////
+    // Claude
+    ///////////////////////////////////
+    {
+        "key": "ctrl+,",
+        "command": "claude-vscode.insertAtMention",
+        "when": "editorHasSelection"
+    },
+    ///////////////////////////////////
     // Side panels
     ///////////////////////////////////
     {
