@@ -197,12 +197,11 @@
     ///////////////////////////////////
     {
         "key": "ctrl+; c",
-        "command": "claude-vscode.editor.openLast",
+        "command": "claude-vscode.focus",
     },
     {
         "key": "ctrl+,",
-        "command": "claude-vscode.insertAtMention",
-        "when": "editorHasSelection"
+        "command": "claude-vscode.insertAtMention"
     },
     ///////////////////////////////////
     // Side panels
@@ -210,6 +209,10 @@
     {
         "key": "ctrl+b",
         "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+; ;",
+        "command": "workbench.action.toggleAuxiliaryBar"
     },
     {
         "key": "ctrl+; space",
