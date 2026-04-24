@@ -33,7 +33,7 @@ These extensions must be installed for the full keybinding and settings configur
 | `vscodevim.vim` | Vim emulation — the entire vim layer depends on this |
 | `alefragnani.project-manager` | Powers `ctrl+; p` and `<leader>ps` |
 | `GitHub.copilot` / `GitHub.copilot-chat` | Copilot inline suggestions and chat |
-| `anthropic.claude-vscode` | `ctrl+; c` opens Claude sidebar |
+| `anthropic.claude-vscode` | `ctrl+; c` toggles Claude sidebar |
 | `GitHub.vscode-pull-request-github` | `<leader>ghp` focuses the PR panel |
 | `esbenp.prettier-vscode` | Default formatter for JSON, TypeScript, TSX |
 | `redhat.vscode-yaml` | Formatter for YAML and Docker Compose |
@@ -94,7 +94,8 @@ Leader key is `<space>`. The vim extension is pinned to affinity `1` for perform
 | `ctrl+; p` | Project Manager — list projects |
 | `ctrl+; t` | Toggle terminal |
 | `ctrl+; z` | Toggle Zen mode |
-| `ctrl+; c` | Open Claude sidebar |
+| `ctrl+; c` | Toggle Claude sidebar |
+| `ctrl+; ;` | Toggle secondary side bar |
 | `ctrl+; w` | Quick switch window |
 | `ctrl+; x` | Extensions |
 | `ctrl+; 1/2/3` | Switch to editor at index 1/2/3 |
