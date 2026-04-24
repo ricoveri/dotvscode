@@ -353,7 +353,7 @@
   ///////////////////////////////////
   // Editor group settings
   ///////////////////////////////////
-  "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+  "workbench.colorTheme": "Cyberpunk",
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
   "workbench.editor.limit.value": 3,
@@ -382,7 +382,7 @@
   // icons
   // ------------------------------------------------
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "Activate UMBRA protocol Icons",
   "material-icon-theme.saturation": 0.7,
   "material-icon-theme.folders.color": "#26a69a",
   "material-icon-theme.folders.theme": "specific",
@@ -575,5 +575,6 @@
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "claudeCode.preferredLocation": "sidebar",
+  "githubPullRequests.pullBranch": "never",
   ///////////////////////////////////
 }
