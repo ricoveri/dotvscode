@@ -198,6 +198,17 @@
     {
         "key": "ctrl+; c",
         "command": "claude-vscode.focus",
+        "when": "focusedView != claudeVSCodeSidebarSecondary && focusedView != claudeVSCodeSidebar"
+    },
+    {
+        "key": "ctrl+; c",
+        "command": "workbench.action.closeAuxiliaryBar",
+        "when": "focusedView == claudeVSCodeSidebarSecondary"
+    },
+    {
+        "key": "ctrl+; c",
+        "command": "workbench.action.closeSidebar",
+        "when": "focusedView == claudeVSCodeSidebar"
     },
     {
         "key": "ctrl+,",
